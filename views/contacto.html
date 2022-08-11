@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Contacto | Fut+ (Beta)</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <nav class="mainHeader__nav">
+            <a id="mainHeader__logo" href="../index.html">
+                <img src="../img/logo.png" alt="FutPlus Logo">
+            </a>
+            <ul class="mainHeader__menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../views/en-vivo.html">Partidos en vivo</a>
+                </li>
+                <li class="menu__link">
+                    <a class="menu__link" href="../views/peliculas.html">Películas</a>
+                </li>
+                <li class="menu__link">
+                    <a class="menu__link" href="../views/series.html">Series</a>
+                </li>
+                <li class="menu__link">
+                    <a class="menu__link" href="../views/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainSection">
+        <picture>
+            <img class="imgInicio" src="../img/iniciofutbol.jpg" alt="Proximamente">
+        </picture>
+        <section class="container">
+            <article class="frontPage">
+                <h1 class="frontPage__title">¡ACERCA DE FUT+ (Beta)!</h1>
+                <h2 class="frontPage__subtitle">¿Quiénes somos?</h2>
+                <h3 class="frontPage__text">Somos un proyecto hecho por y para fans del fútbol. Podés encontrar muchisimos contenidos relacionados al deporte más famoso de todo el mundo: series, películas y partidos en vivo de las ligas más populares, como la Premier League (Inglaterra), Bundesliga (Alemania), Serie A (Italia), Ligue 1 (Francia), LaLiga Santander (España), Liga Profesional de Fútbol (Argentina), entre otros. </h3>
+                <h3 class="frontPage__text">Nuestro contenido es completamente gratuito. Les dejamos una casilla para que nos puedan escribir sus consultas u opiniones acerca del funcionamiento de nuestra plataforma, para poder mejorar y brindarles el mejor servicio posible. </h3>
+            </article>
+        </section>
+        <section class="encuestaMain">
+            <h2 class="frontPage__subtitle">¡Mandanos tu consulta u opinión!</h2>
+            <form class="encuesta" action="../index.html" method="POST" enctype="">
+                <label for="nombre">Nombre y apellido:</label>
+                <input type="text" name="nombre" id="" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="mail" id="" required>
+                <label for="consulta">Escribí tu consulta:</label>
+               <input type="text" name="consulta" id="" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#mainHeader__logo">
+            <img class="footer__img" src="../img/logo.png" alt="FutPlus Logo">
+        </a>
+        <section class="container">
+            <h2 class="footer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt optio, nisi, at laudantium pariatur, laboriosam perferendis numquam fugiat non illum expedita suscipit. Fugit nostrum eius possimus vel a laudantium ea!</h2>
+            <h2 class="footer__text">© Fut+. Todos los derechos reservados.</h2>
+        </section>
+    </footer>
+</body>
+</html>
