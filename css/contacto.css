@@ -108,10 +108,8 @@ a {
     padding: 2rem;
 }
 
-.encuesta {
-    display: flex;
-    flex-direction: row;
-    justify-content: center
+.btn {
+    color: white;
 }
 
 /* FOOTER */
