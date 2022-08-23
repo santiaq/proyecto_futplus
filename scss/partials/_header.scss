@@ -1,0 +1,40 @@
+.mainHeader {
+    background-color: #0C0A09;
+    padding: 1.4rem;
+
+    #mainHeader__logo {
+        display: block;
+        max-width: 150px;
+        min-width: 120px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 4.4rem;
+        font-size: 2em;
+    }
+}
+
+.menu {
+    &__link {
+        font-weight: 300;
+        transition: all .2s;
+        color: #FFFFFF;
+    }
+
+    &__link:hover {
+        color: #9AC92C;
+    }
+}
+
+
+.navbar-toggler-icon {
+    background-color: white;
+}

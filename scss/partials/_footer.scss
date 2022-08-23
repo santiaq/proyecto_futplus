@@ -1,0 +1,18 @@
+.footer {
+    background-color: #2E2E2E;
+    padding: 1.4rem;
+    color: #FFFFFF;
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    &__img {
+        width: 150px;
+        height: 60px;
+    }
+}
