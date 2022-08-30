@@ -88,23 +88,27 @@ a {
 
 .frontPage__title {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: stretch;
   font-weight: bold;
   padding: 2rem;
   font-size: 40px; }
 
 .frontPage__subtitle {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: stretch;
   font-weight: bold;
   padding: 2rem;
   font-size: 36px; }
 
 .frontPage__text {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
   padding: 2rem;
   font-size: 32px;
   font-weight: 400; }
@@ -120,78 +124,75 @@ a {
 
 .containerOne {
   display: grid;
-  grid-template-areas: "titulo1 titulo1 titulo1" "imagen1 imagen2 imagen3";
+  grid-template-areas: "titulo1 titulo1 titulo1" "imagenEnVivo1 imagenEnVivo2 imagenEnVivo3";
   justify-content: center; }
   .containerOne__title {
     grid-area: titulo1;
     font-size: 36px;
     font-weight: bold;
     padding: 2rem; }
-  .containerOne .img1 {
-    grid-area: imagen1;
+  .containerOne__img, .containerOne .containerOne__img--img1, .containerOne .containerOne__img--img2, .containerOne .containerOne__img--img3 {
     width: 386px;
     height: 400px;
-    padding: 1rem; }
-  .containerOne .img2 {
-    grid-area: imagen2;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
-  .containerOne .img3 {
-    grid-area: imagen3;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
+    padding: 1rem;
+    background-size: cover; }
+  .containerOne .containerOne__img--img1 {
+    background-image: url("../img/en-vivo/imagenEnVivo1.png");
+    grid-area: imagenEnVivo1; }
+  .containerOne .containerOne__img--img2 {
+    background-image: url("../img/en-vivo/imagenEnVivo2.png");
+    grid-area: imagenEnVivo2; }
+  .containerOne .containerOne__img--img3 {
+    background-image: url("../img/en-vivo/imagenEnVivo3.png");
+    grid-area: imagenEnVivo3; }
 
 .containerTwo {
   display: grid;
-  grid-template-areas: "titulo2 titulo2 titulo2" "imagen4 imagen5 imagen6";
+  grid-template-areas: "titulo2 titulo2 titulo2" "imagenPeliculas1 imagenPeliculas2 imagenPeliculas3";
   justify-content: center; }
   .containerTwo__title {
     grid-area: titulo2;
     font-size: 36px;
     font-weight: bold;
     padding: 2rem; }
-  .containerTwo .img4 {
-    grid-area: imagen4;
+  .containerTwo__img, .containerTwo .containerTwo__img--img4, .containerTwo .containerTwo__img--img5, .containerTwo .containerTwo__img--img6 {
     width: 386px;
     height: 400px;
-    padding: 1rem; }
-  .containerTwo .img5 {
-    grid-area: imagen5;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
-  .containerTwo .img6 {
-    grid-area: imagen6;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
+    padding: 1rem;
+    background-size: cover; }
+  .containerTwo .containerTwo__img--img4 {
+    background-image: url("../img/peliculas/imagenPeliculas1.png");
+    grid-area: imagenPeliculas1; }
+  .containerTwo .containerTwo__img--img5 {
+    background-image: url("../img/peliculas/imagenPeliculas2.png");
+    grid-area: imagenPeliculas2; }
+  .containerTwo .containerTwo__img--img6 {
+    background-image: url("../img/peliculas/imagenPeliculas3.png");
+    grid-area: imagenPeliculas3; }
 
 .containerThree {
   display: grid;
-  grid-template-areas: "titulo3 titulo3 titulo3" "imagen7 imagen8 imagen9";
+  grid-template-areas: "titulo3 titulo3 titulo3" "imagenSeries1 imagenSeries2 imagenSeries3";
   justify-content: center; }
   .containerThree__title {
     grid-area: titulo3;
     font-size: 36px;
     padding: 2rem;
     font-weight: bold; }
-  .containerThree .img7 {
-    grid-area: imagen7;
+  .containerThree__img, .containerThree .containerThree__img--img7, .containerThree .containerThree__img--img8, .containerThree .containerThree__img--img9 {
     width: 386px;
     height: 400px;
-    padding: 1rem; }
-  .containerThree .img8 {
-    grid-area: imagen8;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
-  .containerThree .img9 {
-    grid-area: imagen9;
-    width: 386px;
-    height: 400px;
-    padding: 1rem; }
+    padding: 1rem;
+    background-size: cover; }
+  .containerThree .containerThree__img--img7 {
+    background-image: url("../img/series/imagenSeries1.png");
+    grid-area: imagenSeries1; }
+  .containerThree .containerThree__img--img8 {
+    background-image: url("../img/series/imagenSeries2.png");
+    grid-area: imagenSeries2; }
+  .containerThree .containerThree__img--img9 {
+    background-image: url("../img/series/imagenSeries3.png");
+    grid-area: imagenSeries3; }
 
 /* MEDIA */
 @media (max-width: 620px) {
