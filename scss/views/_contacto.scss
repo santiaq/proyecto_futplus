@@ -1,0 +1,48 @@
+/* MAIN */
+
+#mainSection {
+    background-image: linear-gradient(#0C0A09, #2E2E2E)
+}
+
+.frontPage {
+    &__title {
+        @include flex(row, nowrap, center, stretch);
+        font-weight: bold;
+        padding: 2rem;
+        font-size: 40px;       
+    }
+
+    &__video {
+        @include flex (row, nowrap, center, stretch);
+    }
+
+    &__subtitle {
+        @include flex(row, nowrap, center, stretch);
+        font-weight: bold;
+        padding: 2rem;
+        font-size: 36px;
+    }
+
+    &__text {
+        @include flex(row, nowrap, center, stretch);
+        padding: 2rem;
+        font-size: 32px;
+        font-weight: 400;
+    }
+}
+
+.btn {
+    color: white;
+}
+
+/* MEDIA */
+
+@media (max-width: 620px) {
+    .mainHeader__nav {
+        flex-direction: column;
+    }
+
+    .encuesta {
+        flex-direction: column;
+    }
+}

@@ -4,26 +4,17 @@
     background-image: linear-gradient(#0C0A09, #2E2E2E)
 }
 
-.carousel-item {
-    .carousel__title {
-        color: white;
-        text-shadow: 0 0 5px #0C0A09;
-        font-size: xx-large;
-    }
-    
-    .carousel__description {
-        color: white;
-        text-shadow: 0 0 5px black;
-        font-size: large;
-    }
-}
 
 .frontPage {
     &__title {
         @include flex(row, nowrap, center, stretch);
         font-weight: bold;
         padding: 2rem;
-        font-size: 40px;
+        font-size: 40px;       
+    }
+
+    &__video {
+        @include flex (row, nowrap, center, stretch);
     }
 
     &__subtitle {
@@ -41,7 +32,6 @@
     }
 }
 
-
 /* CONTENIDO */
 
 .separador {
@@ -53,15 +43,20 @@
     padding: 2rem;
 }
 
-.containerOne {
+.containerLive {
     display: grid;
     grid-template-areas: 
-    "titulo1 titulo1 titulo1"
-    "imagenEnVivo1 imagenEnVivo2 imagenEnVivo3";
+    "tituloVivo tituloVivo tituloVivo"
+    "imagenEnVivo1 imagenEnVivo2 imagenEnVivo3"
+    "imagenEnVivo4 imagenEnVivo5 imagenEnVivo6"
+    "imagenEnVivo7 imagenEnVivo8 imagenEnVivo9";
     justify-content: center;
+}
 
+
+.containerLive {
     &__title {
-        grid-area: titulo1;
+        grid-area: tituloVivo;
         font-size: 36px;
         font-weight: bold;
         padding: 2rem;
@@ -87,80 +82,51 @@
         height: 400px;
         padding: 1rem;
     }
-}
 
-.containerTwo {
-    display: grid;
-    grid-template-areas: 
-    "titulo2 titulo2 titulo2"
-    "imagenPeliculas1 imagenPeliculas2 imagenPeliculas3";
-    justify-content: center;
-
-    &__title {
-        grid-area: titulo2;
-        font-size: 36px;
-        font-weight: bold;
-        padding: 2rem;
-    }
-
-    &__img1 {
-        grid-area: imagenPeliculas1;
-        width: 386px;
-        height: 400px;
-        padding: 1rem;
-    }
-    
-    &__img2 {
-        grid-area: imagenPeliculas2;
-        width: 386px;
-        height: 400px;
-        padding: 1rem;
-    }
-    &__img3 {
-        grid-area: imagenPeliculas3;
-        width: 386px;
-        height: 400px;
-        padding: 1rem;
-    }
-}
-
-.containerThree {
-    display: grid;
-    grid-template-areas: 
-    "titulo3 titulo3 titulo3"
-    "imagenSeries1 imagenSeries2 imagenSeries3";
-    justify-content: center;
-
-    &__title {
-        grid-area: titulo3;
-        font-size: 36px;
-        padding: 2rem;
-        font-weight: bold;
-    }
-    
-    &__img1 {
-        grid-area: imagenSeries1;
+    &__img4 {
+        grid-area: imagenEnVivo4;
         width: 386px;
         height: 400px;
         padding: 1rem;
     }
 
-    &__img2 {
-        grid-area: imagenSeries2;
+    &__img5 {
+        grid-area: imagenEnVivo5;
         width: 386px;
         height: 400px;
         padding: 1rem;
     }
 
-    &__img3 {
-        grid-area: imagenSeries3;
+    &__img6 {
+        grid-area: imagenEnVivo6;
+        width: 386px;
+        height: 400px;
+        padding: 1rem;
+    }
+
+    &__img7 {
+        grid-area: imagenEnVivo7;
+        width: 386px;
+        height: 400px;
+        padding: 1rem;
+    }
+
+    &__img8 {
+        grid-area: imagenEnVivo8;
+        width: 386px;
+        height: 400px;
+        padding: 1rem;
+    }
+
+    &__img9 {
+        grid-area: imagenEnVivo9;
         width: 386px;
         height: 400px;
         padding: 1rem;
     }
 }
 
-/* MEDIA */ 
+/* MEDIA */
 
 @media (max-width: 620px) {
     .mainHeader__nav {
